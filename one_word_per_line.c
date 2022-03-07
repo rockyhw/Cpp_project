@@ -10,6 +10,7 @@ int main() {
 	
 	int ch, state;
 
+	state = NOT_ADD;
 	while ( (ch = getchar()) != EOF) {
 		if (ch == ' ' || ch == '\t' || ch == '\n') {
 			if (state == ADD_LINE) 
