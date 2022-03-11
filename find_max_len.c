@@ -10,6 +10,8 @@ int main() {
 
 	max = 0;
 	while ((len = getLine(line, MAXLINE)) > 0) 
+		printf("%s\n", line);
+/**	
 		if (len > max) {
 			max = len;
 			copy(longest, line);
@@ -18,6 +20,7 @@ int main() {
 		printf("%d\n", max);
 		printf("%s", longest);
 	}
+	**/
 	return 0;
 }
 int getLine(char s[], int lim) {

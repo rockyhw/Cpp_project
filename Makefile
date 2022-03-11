@@ -1,11 +1,13 @@
 CC=gcc
 
 EXECS = test chap1 one_word_per_line count_array \
-	hist_lengths hist_freq find_max_len
+	hist_lengths hist_freq find_max_len find_len_80
 
 all: $(EXECS)
 	echo "all done~ $(EXECS)"
 
+find_len_80:find_len_80.c
+	$(CC) -o $@ $^
 test: test.c
 	$(CC) -o $@ $^
 chap1:chap1.c 
